@@ -1,1 +1,398 @@
-C:/Users/Wapour Vave/AppData/Roaming/BetterDiscord/themes/Bonfire.theme.css
+//META{"name":"Bonfire","description":"Bonfire is a cozy dark theme for Discord!","author":"Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Enable Me Please! ->","version":"1.0"}*//{}
+
+/*-----------------------------------------
+-------------------------------------------
+		  	Custom Discord CSS
+-------------------------------------------
+-----------------------------------------*/
+
+/* Global Variables */
+:root
+{
+	/* Scrollbar Track */
+	--scrollbar-auto-track: transparent;
+
+	/* Avatars */
+	--Bonfire-avatar-border-radius: 5px;
+
+	/*-----------------------------------------
+				Message Content Vars
+	-----------------------------------------*/
+
+	/* First Message Content */
+	--Bonfire-message-content-padding-top: 6px;
+
+	/* Guild Content */
+	--Bonfire-message-margin: 12px;
+	--Bonfire-message-titlebar-padding: 6.5px;
+
+	/* Emoji Message Container */
+	--Bonfire-message-emoji-size: 22px;
+
+	/* Mentioned Message Container */
+	--Bonfire-mentioned-before: #faa61a;
+	--background-mentioned: #FAA61A1E;
+
+	/*-----------------------------------------
+			Message Formatting Vars
+	-----------------------------------------*/
+
+	/* Code Snippet Container */
+	--Bonfire-message-code-text-colour: #b9bbbe;
+
+	/* Quote Content */
+	--Bonfire-message-quote-width: 90%;
+
+	/*-----------------------------------------
+			Inbetween Messages vars
+	-----------------------------------------*/
+	--Bonfire-message-pill-border-radius: 6px;
+}
+
+/* Dark Theme Specific */
+.theme-dark
+{
+	/* Client Colours */
+	--Bonfire-primary-colour: #191d29;
+	--Bonfire-secondary-colour: #13161f;
+
+	/* Message Container */
+	--Bonfire-message-titlebar-colour: #242a3d;
+	/* Message Title Bar */
+	--Bonfire-message-container-colour: #1e2433;
+
+	/* Main Client Scrollbar */
+	--scrollbar-auto-thumb: #36393f;
+	/* Mini Scrollbars */
+	--scrollbar-thin-thumb: #36393f;
+
+	/* New Message */
+	--Bonfire-message-newMessage-colour: #ffff00;
+}
+
+/*-----------------------------------------
+				Version Info
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+				Client
+-----------------------------------------*/
+/* Client Background */
+.container-3w7J-x, .chat-2bRxxu, .content-3YMskv, .chatContent-a9vAAp, .members-1998pB
+{
+
+	background-color: var(--Bonfire-primary-colour)!important;
+/*	background-attachment: fixed;*/
+}
+
+/*-----------------------------------------
+			Avatars & Servers
+-----------------------------------------*/
+
+/* Avatar Masks */
+#svg-mask-avatar-status-round-32,
+#svg-mask-avatar-status-mobile-32,
+/*[id="4018c50a-6972-4e49-a2f0-57fd77885866"],
+[id="974e7a0a-615d-483c-8076-c0d1bc138a17"],*/
+.avatar-3uk_u9 mask
+{
+	display: none;
+}
+
+/* Client Avatars */
+.mask-1l8v16 img
+{
+	border-radius: var(--Bonfire-avatar-border-radius);
+	background-color: var(--Bonfire-secondary-colour);
+}
+
+/* Chat Avatars */
+.avatar-1BDn8e
+{
+	border-radius: var(--Bonfire-avatar-border-radius);
+	width: 24px;
+	height: 24px;
+	box-shadow: 0px 0px 0px 2.5px var(--Bonfire-secondary-colour);
+	position: absolute;
+	top: 3px;
+	left: 8px;
+}
+
+/*-----------------------------------------
+			Message Content
+-----------------------------------------*/
+
+/* Message Container */
+.message-2qnXI6
+{
+	background-color: var(--Bonfire-message-container-colour);
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	padding-top: 0px!important;
+	margin-left: var(--Bonfire-message-margin);
+	margin-right: var(--Bonfire-message-margin);
+}
+
+/* Message Titlebar */
+.header-23xsNx
+{
+	background-color: var(--Bonfire-message-titlebar-colour);
+	padding-top: var(--Bonfire-message-titlebar-padding);
+	padding-bottom: var(--Bonfire-message-titlebar-padding);
+}
+
+/* Message Title Text */
+.headerText-3Uvj1Y
+{
+	padding-left: 40px; /* Username + Time */
+}
+
+/* First Message Content */
+.groupStart-23k01U .messageContent-2qWWxC
+{
+	padding-top: var(--Bonfire-message-content-padding-top);
+}
+
+/* Message Content */
+.messageContent-2qWWxC
+{
+	padding-top: 0px;
+	padding-left: 84px!important;
+	padding-right: 8px!important;
+}
+
+/* Emoji Message Container */
+.emoji.jumboable, .emojiContainer-3X8SvE
+{
+	width: var(--Bonfire-message-emoji-size);
+	min-height: 0px;
+	height: var(--Bonfire-message-emoji-size);
+}
+
+/* Global Message Content */
+.messageContent-2qWWxC
+{
+	padding-bottom: 3px;
+}
+
+
+/*-----------------------------------------
+			Message Formatting
+-----------------------------------------*/
+
+/**
+	Codeblock Message
+*/
+
+/* Codeblock Message Container */
+.scrollbarGhostHairline-1mSOM1
+{
+	background-color: var(--Bonfire-primary-colour)!important;
+	border-color: var(--Bonfire-secondary-colour)!important;
+	margin-bottom: 4px;
+	width: 100%;
+	position: relative;
+}
+/* Remove Codeblock Padding */
+.markup-2BOw-j pre
+{
+	max-width: 100%;
+	padding-right: 21px;
+}
+
+/* Code Snippet Container */
+code.inline
+{
+	background-color: var(--Bonfire-primary-colour)!important;
+	color: var(--Bonfire-message-code-text-colour);
+	box-shadow: 0px 0px 0px 1px var(--Bonfire-secondary-colour);
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+	padding-left: 2px!important;
+	padding-right: 2px!important;
+}
+
+/**
+	Image Message
+*/
+
+/* Image Message Container */
+.embedWrapper-lXpS3L.imageWrapper-2p5ogY
+{
+	padding-top: var(--Bonfire-message-content-padding-top);
+	background-color: transparent;
+	padding-left: 4px;
+}
+.embedWrapper-lXpS3L.imageWrapper-2p5ogY img /* Add border back to the image */
+{
+	border-radius: 3px;
+}
+
+/**
+	Embed Message
+*/
+
+/* Embed Message Container */
+.container-1ov-mD
+{
+	padding-left: 8px;
+	padding-top: var(--Bonfire-message-content-padding-top);
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+.embedWrapper-lXpS3L
+{
+	padding-top: 0px;
+	background-color: var(--Bonfire-primary-colour);
+}
+
+/**
+	Mentioned Message
+*/
+
+/* Mentioned Message Container */
+.mentioned-xhSam7
+{
+	background-color: var(--background-mentioned);
+}
+.mentioned-xhSam7:before
+{
+	background-color: var(--Bonfire-mentioned-before);
+	width: 3px;
+}
+
+/**
+	Spotify Message
+*/
+
+/* Spotify Message Invite Container */
+.invite-18yqGF
+{
+	border-radius: 4px;
+}
+
+/**
+	Quote Message
+*/
+
+/* Quote Message Container */
+.blockquoteContainer-U5TVEi
+{
+/*	position: relative;*/
+/*	top: 35px;*/ /* Change this when done with titlebar for content */
+/*	padding-bottom: 50px;*/
+}
+
+/* Quote Content */
+blockquote
+{
+/*	max-width: 100%!important;
+	width: var(--Bonfire-message-quote-width);*/
+}
+
+/* Quote Titlebar */
+.blockquoteDivider-2hH8H6
+{
+/*	border-radius: 0px!important;
+	position: absolute;
+	width: var(--Bonfire-message-quote-width)!important;
+	height: 35.21px;
+
+	bottom: 80px;*/
+}
+.blockquoteDivider-2hH8H6:after
+{
+/*	content: "Quote";
+	position: absolute;
+	top: 6px;*/
+}
+
+/**
+	Reply Message
+*/
+
+/* Message Replies */
+/*.repliedMessage-VokQwo
+{
+	position: relative;
+	margin-bottom: 0px!important;
+	bottom: 0px;
+	left: 50px;
+	z-index: 5;
+}*/
+
+/*-----------------------------------------
+			Inbetween Messages
+-----------------------------------------*/
+
+/**
+	New Message + New Day Pills
+*/
+
+/* New Message Line */
+.divider-3_HH5L
+{
+	margin-top: 0px!important;
+	margin-bottom: 0px!important;
+	position: relative;
+	margin-left: 13px;
+	margin-right: 12px;
+/*	border-color: var(--Bonfire-secondary-colour); */
+	border: 0px;
+/*	display: none;*/
+}
+
+/* New Message Pill */
+.unreadPill-2HyYtt
+{
+	font-size: 0px;
+	width: 8px;
+	height: 8px;
+	top: 15px;
+	right: 6px;
+
+	background-color: var(--Bonfire-message-newMessage-colour);
+	border-radius: 50%;
+	border-color: ;
+	background-image: url(:javascript:print('sssss'));
+
+	/* Old Version */
+/*	background-color: var(--Bonfire-primary-colour);
+	border-radius: var(--Bonfire-message-pill-border-radius);
+	border-color: var(--Bonfire-secondary-colour)!important; 
+	border: 1px solid;
+	right: 50%;
+
+	width: 30px;
+	height: 20px;
+
+	padding-left: 3px;*/
+}
+.unreadPillCap-3_K2q2 /* Little Triangle Attached */
+{
+	display: none;
+}
+
+/* New Day Pill */
+.content-1o0f9g
+{
+	background-color: var(--Bonfire-primary-colour);
+	border: 1px solid;
+	border-radius: var(--Bonfire-message-pill-border-radius);
+	border-color: var(--Bonfire-secondary-colour); 
+	position: relative;
+	top: 9px;
+	height: 10px;
+}
+
+
+/*-----------------------------------------
+				Text Input
+-----------------------------------------*/
+
+
+/*-----------------------------------------
+				User Area
+-----------------------------------------*/
+
