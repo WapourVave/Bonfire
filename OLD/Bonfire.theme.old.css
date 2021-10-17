@@ -73,8 +73,8 @@
 	/* Mini Scrollbars */
 	--scrollbar-thin-thumb: #36393f;
 
-	/* New Message */
-	--Bonfire-message-newMessage-colour: #ffff00;
+	/* Unread Message */
+	--Bonfire-message-unreadMessage-colour: #ffff00;
 }
 
 /*-----------------------------------------
@@ -363,10 +363,10 @@ blockquote
 -----------------------------------------*/
 
 /**
-	New Message + New Day Pills
+	Unread Message + New Day Pills
 */
 
-/* New Message Line */
+/* Unread Message Line */
 .divider-3_HH5L
 {
 	margin-top: 0px!important;
@@ -380,29 +380,29 @@ blockquote
 	width: 0px; /* Remove to change Message Pill Origin to Right */
 }
 
-/* New Message Pill */
+/* Unread Message Pill */
 .unreadPill-2HyYtt
 {
 	font-size: 0px;
 	width: 8px;
 	height: 8px;
 
-	background-color: var(--Bonfire-message-newMessage-colour);
+	background-color: var(--Bonfire-message-unreadMessage-colour);
 	border-radius: 50%;
 }
 
-/* New Message Pill Titlebar */
+/* Unread Message Pill Titlebar */
 .beforeGroup-1rH1F0 .unreadPill-2HyYtt
 {
- 	/* For New Message Indicator to be Top Right of the Titlebar */
+ 	/* For Unread Message Indicator to be Top Right of the Titlebar */
 /*	top: 16px;
 	right: 6px; */
 
-	/* New Message Displays Under */
+	/* Unread Message Displays Under */
 	top: 57px; 
 }
 
-/* New Message AFTER Titlebar */
+/* Unread Message AFTER Titlebar */
 .unreadPill-2HyYtt
 {
 	top: 6.5px;

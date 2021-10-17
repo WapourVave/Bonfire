@@ -5,3 +5,344 @@
 		  		Bonfire
 -------------------------------------------
 -----------------------------------------*/
+
+/*-----------------------------------------
+    Version Info
+-----------------------------------------*/
+
+/*-----------------------------------------
+    Global Variables
+-----------------------------------------*/
+:root
+{   
+	/* Avatars */
+	--Bonfire-avatar-border-radius: 5px;
+
+    /* Chat Avatars */
+    --Bonfire-chat-avatar-size: 24px;
+
+    /* Message Content */
+        /* First Message Content */
+	    --Bonfire-message-content-padding-top: 6px;
+
+        /* Guild Content */
+	    --Bonfire-message-margin: 14px;
+	    --Bonfire-message-titlebar-padding: 6px;
+
+	    /* Emoji Message Container */
+	    --Bonfire-message-emoji-size: 22px;
+
+        /* Unread Message Pill */
+        --Bonfire-message-pill-border-radius: 6px;
+}
+
+/*-----------------------------------------
+    Dark Theme Variables
+-----------------------------------------*/
+
+/* Bonfire Variables */
+.theme-dark
+{
+	/* Client Background */
+	--Bonfire-primary-colour: #191d29;
+	--Bonfire-secondary-colour: #13161f;
+
+    /* Main Client Buttons */
+
+    /* Text */
+
+    /* Text Area */
+
+    /* Message Area */ 
+    --Bonfire-message-hovered-colour: #171b26;
+
+    /* Message Formatting Mentioned */
+    --Bonfire-mentioned-line-colour: #faa61a; /* Unused */
+    --Bonfire-mentioned-colour: #332e27; /* Unused */
+    --Bonfire-message-hovered-mention-colour: #2b2828; /* Unused */
+            
+
+    /* Scrollbar */
+ 
+
+    
+	/* Message Container */
+	--Bonfire-message-titlebar-colour: #242a3d;
+
+	/* Message Title Bar */
+	--Bonfire-message-container-colour: #1e2433;
+
+	/* Main Client Scrollbar */
+	--scrollbar-auto-thumb: #36393f;
+	/* Mini Scrollbars */
+	--scrollbar-thin-thumb: #36393f;
+
+	/* Unread Message */
+	--Bonfire-message-unreadMessage-colour: #ffff00;
+}
+
+/* Discord Variables */
+.theme-dark
+{
+    /* Client Background */
+    --background-primary: var(--Bonfire-primary-colour); /* Base Client Colour */
+    --background-secondary: var(--Bonfire-primary-colour); /* Client Side Bars */
+    --background-secondary-alt: #292b2f; /* User Area Bottom Left, Tabs */
+    --background-tertiary: #202225; /* Titlebar, Server List Background, Search Text Area's */
+    --background-accent: #4f545c;
+    --background-floating: #18191c;
+    --background-modifier-hover: rgba(79,84,92,0.16);
+    --background-modifier-active: rgba(79,84,92,0.24);
+    --background-modifier-selected: rgba(79,84,92,0.32);
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+
+    /* Main Client Buttons */
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+
+    /* Text */
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #72767d;
+    --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+    --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
+    --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --channels-default: #8e9297; /* Channel Text */
+
+    /* Text Area */
+    --channeltextarea-background: #40444b;
+    --textbox-markdown-syntax: #8e9297;
+
+    /* Message Area */
+	--background-message-hover: var(--Bonfire-message-hovered-colour);
+
+    /* Message Formatting Mentioned */
+    --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+    --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
+
+    /* Scrollbar */
+    --scrollbar-thin-thumb: #202225;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #202225;
+    --scrollbar-auto-track: hsl(210,calc(var(--saturation-factor, 1)*9.8%),20%);
+    --scrollbar-auto-scrollbar-color-thumb: #202225;
+    --scrollbar-auto-scrollbar-color-track: #2f3136;
+
+    /* Unknown */
+    --info-positive-text: #fff;
+    --info-warning-text: #fff;
+    --info-danger-text: #fff;
+    --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
+    --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --info-help-text: #fff;
+    --status-warning-text: #000;
+    --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+    --logo-primary: #fff;
+    --control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --activity-card-background: #202225;
+}
+
+/*-----------------------------------------
+    Light Theme Variables
+-----------------------------------------*/
+
+/*-----------------------------------------
+	Avatars
+-----------------------------------------*/
+
+/**
+* TODO
+* Fix Typing Masks
+*/
+
+/* Avatar Masks */
+#svg-mask-avatar-status-round-32,
+#svg-mask-avatar-status-mobile-32,
+#svg-mask-avatar-default,
+svg mask [id="*"],
+.avatar-3uk_u9 mask
+{
+	display: none;
+}
+
+/* Client Avatars */
+.mask-1l8v16 img
+{
+	border-radius: var(--Bonfire-avatar-border-radius);
+	background-color: var(--Bonfire-secondary-colour);
+}
+
+/* Chat Avatars */
+.avatar-1BDn8e
+{
+	border-radius: var(--Bonfire-avatar-border-radius);
+	width: var(--Bonfire-chat-avatar-size);
+	height: var(--Bonfire-chat-avatar-size);
+	box-shadow: 0px 0px 0px 2.5px var(--Bonfire-secondary-colour);
+	position: absolute;
+	top: 3px;
+	left: 8px;
+}
+
+/*-----------------------------------------
+	Message Content
+-----------------------------------------*/
+
+/* Message Container */
+.message-2qnXI6
+{
+	background-color: var(--Bonfire-message-container-colour);
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	padding-top: 0px!important;
+	margin-left: var(--Bonfire-message-margin);
+	margin-right: var(--Bonfire-message-margin);
+}
+
+/* Message Titlebar */
+.header-23xsNx
+{
+	background-color: var(--Bonfire-message-titlebar-colour);
+	padding-top: var(--Bonfire-message-titlebar-padding);
+	padding-bottom: var(--Bonfire-message-titlebar-padding);
+	overflow: visible!important;
+}
+
+/* Message Title Text */
+.headerText-3Uvj1Y
+{
+	padding-left: 40px; /* Username + Time */
+/*	padding-left: 0px;
+	padding-right: 80%;*/
+}
+
+/* First Message Content */
+.groupStart-23k01U .messageContent-2qWWxC
+{
+	padding-top: var(--Bonfire-message-content-padding-top);
+}
+
+/* Message Content */
+.messageContent-2qWWxC
+{
+	padding-top: 0px;
+	padding-left: 84px!important;
+/*	padding-right: 8px!important;*/ /* Padding Value without Timestamps */
+	padding-right: 39px!important; /* Padding Value with Timestamps */
+}
+
+/* Emoji Message Container */
+.emoji.jumboable, .emojiContainer-3X8SvE
+{
+	width: var(--Bonfire-message-emoji-size);
+	min-height: 0px;
+	height: var(--Bonfire-message-emoji-size);
+}
+
+/* Global Message Content */
+.messageContent-2qWWxC
+{
+	padding-bottom: 3px;
+}
+
+/*-----------------------------------------
+	Message Area Pills
+-----------------------------------------*/
+
+/*
+* TODO
+* Fix breaking when Unread Message Pill and New Date Pill are both displayed 
+* https://reading-urls.is-la.me/9nRe7kM.png
+*/
+
+/* Divider Line */
+.divider-3_HH5L
+{
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    position: relative;
+    margin-left: 13px;
+    margin-right: 12px;
+/*	border-color: var(--Bonfire-secondary-colour); */
+    border: 0px;
+
+    width: 0px; /* Remove to change Message Pill Origin to Right */
+}
+
+/* Unread Message Pill */
+    .unreadPill-2HyYtt
+    {
+	    font-size: 0px;
+    	width: 8px;
+    	height: 8px;
+
+    	background-color: var(--Bonfire-message-unreadMessage-colour);
+    	border-radius: 50%;
+    }
+
+    /* Unread Message Pill Titlebar */
+    .beforeGroup-1rH1F0 .unreadPill-2HyYtt
+    {
+ 	    /* For Unread Message Indicator to be Top Right of the Titlebar */
+    /*	top: 16px;
+    	right: 6px; */
+
+	    /* Unread Message Displays Under */
+    	top: 57px; 
+    }
+
+    /* Unread Message AFTER Titlebar */
+    .unreadPill-2HyYtt
+    {
+    	top: 8px;
+
+	    /* On the Right */
+    	/* right: -12px; */
+
+	    /* On the Left lad */
+	    position: absolute;
+	    right: 4px;
+    }
+
+    .unreadPillCap-3_K2q2 /* Little Triangle Attached */
+    {
+	    display: none;
+    }
+
+    /* Unread + New Day Pill Collision Fix */
+    .content-1o0f9g + .unreadPill-2HyYtt
+    {
+        top: 66px;
+    }
+    
+
+/* New Day Pill */
+    /* Position */
+    .content-1o0f9g
+    {
+	    background-color: var(--Bonfire-primary-colour);
+    	color: var(--text-muted);
+    	border: 1px solid;
+    	border-radius: var(--Bonfire-message-pill-border-radius);
+    	border-color: var(--Bonfire-secondary-colour); 
+    	position: relative;
+    	top: 9px;
+    	height: 10px;
+    }
+
+    /* Recent Unread */
+    .isUnread-3Ef-o9 .content-1o0f9g
+    {
+        color: var(--text-muted);
+    }
